@@ -1,0 +1,31 @@
+# Build results
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.log
+
+# Rider / Visual Studio files
+.vs/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# Dependency folders
+node_modules/
+packages/
+
+# Environment and secrets
+*.env
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# EF migrations backups
+Migrations/*Designer.cs
+
+# OS files
+.DS_Store
+Thumbs.db
