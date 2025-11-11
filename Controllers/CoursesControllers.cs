@@ -4,8 +4,8 @@ using RytnavaBack.Models;
 
 namespace RytnavaBack.Controllers;
 
-    [Route("api/[controller]")]
-    [ApiController]
+[Route("api/[controller]")]
+[ApiController]
     public class CoursesController : ControllerBase
     {
         private readonly RytnavaContext _context;
@@ -28,4 +28,7 @@ namespace RytnavaBack.Controllers;
                _context.SaveChanges();
                return CreatedAtAction(nameof(GetAll), new{ id = course.Id}, course);
            }
+           
     }
+    
+    
